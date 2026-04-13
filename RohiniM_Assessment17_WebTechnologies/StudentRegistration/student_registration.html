@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Student Registration Form</h1>
+        <p>This form is used to register a student with their personal and course details</p>
+        <form>
+            <fieldset>
+                <label>Full Name: </label>
+                <input type="text" name="fullname" id="fullname" placeholder="Eg: Renu S">
+                <br><br>
+
+                <label>Email: </label>
+                <input type="email" name="email" id="email" placeholder="Eg: renu@gmail.com">
+                <br><br>
+
+                <label>Date of Birth: </label>
+                <input type="date" name="dob"id="dob">
+                <br><br>
+
+                <label>Gender: </label>
+                <div class="gender-group">
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+                </div>
+                <br><br>
+
+                <label>Languages Known: </label>
+                <div class="language-group">
+                    <input type="checkbox"> Tamil
+                    <input type="checkbox"> English
+                    <input type="checkbox"> Hindi
+                    <input type="checkbox"> Kannada
+                    <input type="checkbox"> Telugu
+                </div>
+                <br><br>
+
+                <label id="course">Course: </label>
+                <select>
+                    <option>Choose</option>
+                    <option>B.E</option>
+                    <option>M.E</option>
+                    <option>MBA</option>
+                    <option>MCA</option>
+                </select>
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+                
+        <h3>Campus Facilities</h3>
+        <ul>
+            <li>Library</li>
+            <li>Computer Lab</li>
+            <li>Sports Ground</li>
+        </ul>
+
+        <footer>Rohini M - 2026</footer>    
+             
+    </center>
+    
+</body>
+</html>
