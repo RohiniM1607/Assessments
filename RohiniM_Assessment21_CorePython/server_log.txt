@@ -1,0 +1,5 @@
+[INFO] 2025-06-01 09:00:01 — Service started
+[WARNING] 2025-06-01 09:05:12 — High memory
+[ERROR] 2025-06-01 09:10:44 — DB connection failed
+[INFO] 2025-06-01 09:15:00 — Request processed
+[CRITICAL] 2025-06-01 09:20:33 — Disk full
