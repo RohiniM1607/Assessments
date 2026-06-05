@@ -1,0 +1,56 @@
+{
+  "id": "0476dd69-9ca1-4ba7-b651-db7cc2de6627",
+  "version": "2.0",
+  "name": "Assessment19",
+  "url": "https://tutorialsninja.com/demo/",
+  "tests": [{
+    "id": "0e34c158-33d2-4198-9a73-f08750e1613b",
+    "name": "Demo",
+    "commands": [{
+      "id": "38d5a088-c328-4141-8a18-b1a4c5bc6b4f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48c0f691-bedf-40e2-a004-9ccf3bb0b06c",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/p[2]/text()[1]",
+      "targets": [],
+      "value": "homePrice"
+    }, {
+      "id": "fb52846b-13b8-46f6-8a62-94472d5e0a88",
+      "comment": "",
+      "command": "click",
+      "target": "body div[id='common-home'] div[class='row'] div[class='row'] div:nth-child(2) div:nth-child(1) div:nth-child(2) h4:nth-child(1) a:nth-child(1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b2c0d2b-e887-4d04-81db-99c65c101e3e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//h1[text()='iPhone']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "60cd7131-2dcf-40ef-8566-e8b229f1f276",
+      "comment": "",
+      "command": "storeText",
+      "target": "//h2[normalize-space()='$123.20']",
+      "targets": [],
+      "value": "Productprice"
+    }]
+  }],
+  "suites": [{
+    "id": "39745a75-d01c-46a3-9cbf-dde54b94fd79",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0e34c158-33d2-4198-9a73-f08750e1613b"]
+  }],
+  "urls": ["https://tutorialsninja.com/demo/"],
+  "plugins": []
+}
