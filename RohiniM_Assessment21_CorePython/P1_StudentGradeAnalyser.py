@@ -42,6 +42,6 @@ for usn in students:
         below_average.append(usn)
 print("Below Average:", below_average)
 print("\n--- Leaderboard ---")
-sorted_students = sorted(students.items(), reverse=True, key=lambda x: x[1])
+sorted_students = sorted(students.items())
 for usn, marks in sorted_students:
     print(usn, ":", marks)
