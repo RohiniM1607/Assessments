@@ -1,0 +1,286 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: TutorialsNinjaTest.test.ts >> Tutorials Ninja Test >> New User Registration @Smoke
+- Location: tests\TutorialsNinjaTest.test.ts:14:9
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('link', { name: 'Your Account Has Been Created!' })
+Expected: visible
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for getByRole('link', { name: 'Your Account Has Been Created!' })
+
+```
+
+```yaml
+- navigation:
+  - button "$ Currency ":
+    - strong: $
+    - text: Currency 
+  - list:
+    - listitem:
+      - link "":
+        - /url: https://tutorialsninja.com/demo/index.php?route=information/contact
+      - text: "123456789"
+    - listitem:
+      - link " My Account":
+        - /url: https://tutorialsninja.com/demo/index.php?route=account/account
+    - listitem:
+      - link " Wish List (0)":
+        - /url: https://tutorialsninja.com/demo/index.php?route=account/wishlist
+    - listitem:
+      - link " Shopping Cart":
+        - /url: https://tutorialsninja.com/demo/index.php?route=checkout/cart
+    - listitem:
+      - link " Checkout":
+        - /url: https://tutorialsninja.com/demo/index.php?route=checkout/checkout
+- banner:
+  - heading "Qafox.com" [level=1]:
+    - link "Qafox.com":
+      - /url: https://tutorialsninja.com/demo/index.php?route=common/home
+  - textbox "Search"
+  - button ""
+  - button " 0 item(s) - $0.00"
+- navigation:
+  - list:
+    - listitem:
+      - link "Desktops":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=20
+    - listitem:
+      - link "Laptops & Notebooks":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=18
+    - listitem:
+      - link "Components":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=25
+    - listitem:
+      - link "Tablets":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=57
+    - listitem:
+      - link "Software":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=17
+    - listitem:
+      - link "Phones & PDAs":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=24
+    - listitem:
+      - link "Cameras":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=33
+    - listitem:
+      - link "MP3 Players":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/category&path=34
+- list:
+  - listitem:
+    - link "":
+      - /url: https://tutorialsninja.com/demo/index.php?route=common/home
+  - listitem:
+    - link "Account":
+      - /url: https://tutorialsninja.com/demo/index.php?route=account/account
+  - listitem:
+    - link "Register":
+      - /url: https://tutorialsninja.com/demo/index.php?route=account/register
+- text: " Warning: E-Mail Address is already registered!"
+- heading "Register Account" [level=1]
+- paragraph:
+  - text: If you already have an account with us, please login at the
+  - link "login page":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/login
+  - text: .
+- group "Your Personal Details":
+  - text: Your Personal Details * First Name
+  - textbox "* First Name":
+    - /placeholder: First Name
+    - text: Example
+  - text: "* Last Name"
+  - textbox "* Last Name":
+    - /placeholder: Last Name
+    - text: Practice
+  - text: "* E-Mail"
+  - textbox "* E-Mail":
+    - /placeholder: E-Mail
+    - text: example.321@gmail.com
+  - text: "* Telephone"
+  - textbox "* Telephone":
+    - /placeholder: Telephone
+    - text: "9876543210"
+- group "Your Password":
+  - text: Your Password * Password
+  - textbox "* Password":
+    - /placeholder: Password
+    - text: Example@123
+  - text: "* Password Confirm"
+  - textbox "* Password Confirm":
+    - /placeholder: Password Confirm
+    - text: Example@123
+- group "Newsletter":
+  - text: Newsletter Subscribe
+  - radio "Yes"
+  - text: "Yes"
+  - radio "No" [checked]
+  - text: "No"
+- text: I have read and agree to the
+- link "Privacy Policy":
+  - /url: https://tutorialsninja.com/demo/index.php?route=information/information/agree&information_id=3
+- checkbox [checked]
+- button "Continue"
+- complementary:
+  - link "Login":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/login
+  - link "Register":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/register
+  - link "Forgotten Password":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/forgotten
+  - link "My Account":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/account
+  - link "Address Book":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/address
+  - link "Wish List":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/wishlist
+  - link "Order History":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/order
+  - link "Downloads":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/download
+  - link "Recurring payments":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/recurring
+  - link "Reward Points":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/reward
+  - link "Returns":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/return
+  - link "Transactions":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/transaction
+  - link "Newsletter":
+    - /url: https://tutorialsninja.com/demo/index.php?route=account/newsletter
+- contentinfo:
+  - heading "Information" [level=5]
+  - list:
+    - listitem:
+      - link "About Us":
+        - /url: https://tutorialsninja.com/demo/index.php?route=information/information&information_id=4
+    - listitem:
+      - link "Delivery Information":
+        - /url: https://tutorialsninja.com/demo/index.php?route=information/information&information_id=6
+    - listitem:
+      - link "Privacy Policy":
+        - /url: https://tutorialsninja.com/demo/index.php?route=information/information&information_id=3
+    - listitem:
+      - link "Terms & Conditions":
+        - /url: https://tutorialsninja.com/demo/index.php?route=information/information&information_id=5
+  - heading "Customer Service" [level=5]
+  - list:
+    - listitem:
+      - link "Contact Us":
+        - /url: https://tutorialsninja.com/demo/index.php?route=information/contact
+    - listitem:
+      - link "Returns":
+        - /url: https://tutorialsninja.com/demo/index.php?route=account/return/add
+    - listitem:
+      - link "Site Map":
+        - /url: https://tutorialsninja.com/demo/index.php?route=information/sitemap
+  - heading "Extras" [level=5]
+  - list:
+    - listitem:
+      - link "Brands":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/manufacturer
+    - listitem:
+      - link "Gift Certificates":
+        - /url: https://tutorialsninja.com/demo/index.php?route=account/voucher
+    - listitem:
+      - link "Affiliate":
+        - /url: https://tutorialsninja.com/demo/index.php?route=affiliate/login
+    - listitem:
+      - link "Specials":
+        - /url: https://tutorialsninja.com/demo/index.php?route=product/special
+  - heading "My Account" [level=5]
+  - list:
+    - listitem:
+      - link "My Account":
+        - /url: https://tutorialsninja.com/demo/index.php?route=account/account
+    - listitem:
+      - link "Order History":
+        - /url: https://tutorialsninja.com/demo/index.php?route=account/order
+    - listitem:
+      - link "Wish List":
+        - /url: https://tutorialsninja.com/demo/index.php?route=account/wishlist
+    - listitem:
+      - link "Newsletter":
+        - /url: https://tutorialsninja.com/demo/index.php?route=account/newsletter
+  - separator
+  - paragraph:
+    - text: Powered By
+    - link "OpenCart":
+      - /url: http://www.opencart.com
+    - text: Qafox.com © 2026
+```
+
+# Test source
+
+```ts
+  1  | import {Page, Locator, expect} from '@playwright/test';
+  2  | 
+  3  | export class RegisterPage{
+  4  |     readonly page: Page;
+  5  |     readonly registerPageTitle: Locator;
+  6  |     readonly firstName: Locator;
+  7  |     readonly lastName: Locator;
+  8  |     readonly email: Locator;
+  9  |     readonly telephone: Locator;
+  10 |     readonly password: Locator;
+  11 |     readonly confirmPassword: Locator;
+  12 |     readonly privacyPolicy: Locator;
+  13 |     readonly continueButton: Locator;
+  14 |     readonly accountCreated: Locator;
+  15 | 
+  16 |     constructor(page: Page){
+  17 |         this.page = page;
+  18 |         this.registerPageTitle = page.getByRole('heading', {name: 'Register Account'});
+  19 |         this.firstName = page.locator("input#input-firstname");
+  20 |         this.lastName = page.locator("input#input-lastname");
+  21 |         this.email = page.getByPlaceholder("E-Mail");
+  22 |         this.telephone = page.getByPlaceholder("Telephone");
+  23 |         this.password = page.locator("input#input-password");
+  24 |         this.confirmPassword = page.locator("input#input-confirm");
+  25 |         this.privacyPolicy = page.locator("//input[@name='agree']");
+  26 |         this.continueButton = page.locator("//input[@type='submit']");
+  27 |         this.accountCreated = page.getByRole('link',{name: 'Your Account Has Been Created!'})
+  28 |     }
+  29 | 
+  30 |     async verifyRegisterPage(){
+  31 |         await expect(this.registerPageTitle).toBeVisible();
+  32 |     }
+  33 | 
+  34 |     async enterPersonalDetails(f_name: string, l_name: string, e_mail: string, tele: string,){
+  35 |         await this.firstName.fill(f_name);
+  36 |         await this.lastName.fill(l_name);
+  37 |         await this.email.fill(e_mail);
+  38 |         await this.telephone.fill(tele);
+  39 |     }
+  40 | 
+  41 |     async enterPasswordDetails(pass: string, confirm_pass: string){
+  42 |         await this.password.fill(pass);
+  43 |         await this.confirmPassword.fill(confirm_pass);
+  44 |     }
+  45 | 
+  46 |     async agreePolicy(){
+  47 |         await this.privacyPolicy.check();
+  48 |     }
+  49 | 
+  50 |     async clickContinueButton(){
+  51 |         await this.continueButton.click()
+  52 |     }
+  53 | 
+  54 |     async verifyAccountCreation(){
+> 55 |         await expect(this.accountCreated).toBeVisible();
+     |                                           ^ Error: expect(locator).toBeVisible() failed
+  56 |     }
+  57 | }
+```
