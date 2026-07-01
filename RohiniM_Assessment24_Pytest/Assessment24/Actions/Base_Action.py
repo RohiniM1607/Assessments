@@ -22,5 +22,4 @@ class base_actions():
             return False
         
     def get_elements(self, locator):
-        return self.wait.until(EC.presence_of_all_elements_located((By.XPATH, locator))
-    )
+        return self.wait.until(EC.presence_of_all_elements_located(By.XPATH, locator))

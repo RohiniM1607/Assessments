@@ -19,7 +19,6 @@ class search_actions():
 
     def verify_product_present(self, product_name):
         products = self.get_products()
-        time.sleep(5)
         for product in products:
             if product_name.lower() in product.lower():
                 return True
