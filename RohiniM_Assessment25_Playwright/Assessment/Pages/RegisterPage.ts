@@ -32,10 +32,15 @@ export class RegisterPage{
     }
 
     async enterPersonalDetails(f_name: string, l_name: string, e_mail: string, tele: string,){
+        const randomEmail = this.generateRandomEmail(e_mail);
         await this.firstName.fill(f_name);
         await this.lastName.fill(l_name);
-        await this.email.fill(e_mail);
+        await this.email.fill(randomEmail);
         await this.telephone.fill(tele);
+    }
+    generateRandomEmail(email: string): string {
+        const [name, domain] = email.split("@");
+        return `${name}${Date.now()}@${domain}`;
     }
 
     async enterPasswordDetails(pass: string, confirm_pass: string){

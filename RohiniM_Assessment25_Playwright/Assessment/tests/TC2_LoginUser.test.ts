@@ -1,4 +1,4 @@
-import {test, expect} from '../Fixtures/BaseFixture';
+import {test} from '../Fixtures/BaseFixture';
 import loginData from '../TestData/LoginData.json';
 
 test.describe("Login Test", ()=>{

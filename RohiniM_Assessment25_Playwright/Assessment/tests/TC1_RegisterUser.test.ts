@@ -1,4 +1,4 @@
-import {test, expect} from '../Fixtures/BaseFixture';
+import {test} from '../Fixtures/BaseFixture';
 import {registerData, RegisterUser} from '../Utils/CSVReader'
 
 const users: RegisterUser[] = registerData();
