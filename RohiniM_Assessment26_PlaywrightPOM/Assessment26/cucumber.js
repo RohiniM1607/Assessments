@@ -17,11 +17,10 @@ module.exports = {
         // ],
         dryRun: false,
         
-        format:[
+        format: [
             "progress",
-            "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "allure-cucumberjs/reporter",
+            "json:reports/cucumber-json/cucumber-report.json",
+            "html:reports/cucumber-report.html"
         ]
         
     }

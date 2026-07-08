@@ -6,6 +6,10 @@ import { HomePage } from "../../test/pages/HomePage";
 import { LoginPage } from "../pages/LoginPage";
 import { RegisterPage } from "../pages/RegisterPage";
 
+import { setDefaultTimeout } from "@cucumber/cucumber";
+
+setDefaultTimeout(60000);
+
 let browser: Browser;
 
 BeforeAll(async function () {

@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js src/test/features/",
-    "posttest": "npx ts-node src/test/utils/Report.ts"
+    "posttest": "npx ts-node src/resources/utils/report.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@cucumber/cucumber": "^13.0.0",
+    "@cucumber/cucumber": "^10.9.0",
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
     "@types/winston": "^2.4.4",
