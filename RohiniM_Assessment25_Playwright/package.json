@@ -1,0 +1,23 @@
+{
+  "name": "assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
+    "@types/prompt-sync": "^4.2.3",
+    "allure-playwright": "^3.10.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.0",
+    "dotenv": "^17.4.2",
+    "prompt-sync": "^4.2.0"
+  }
+}

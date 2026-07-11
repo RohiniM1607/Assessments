@@ -1,2 +1,0 @@
-type,gender,firstname,lastname,email,password,confirmpassword
-valid,Female,Example,1,example.1@gmail.com,Example@123,Example@123
